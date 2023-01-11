@@ -14,10 +14,10 @@
   background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("https://source.unsplash.com/random/?light") center top;
 }
 .home__name {
-  font-size: 5rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
   border-bottom: 2px solid #fff;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 .home__name--last {
   color: #f97316;
@@ -26,7 +26,7 @@
 
 body {
   background: #262626;
-  color: white;
+  color: #fff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
   line-height: 1;
@@ -65,6 +65,7 @@ main .social-icons {
 }
 main .social-icons a {
   padding: 0.4rem;
+  transition: all 0.9s ease-in-out;
 }
 main .social-icons a:hover {
   color: #f97316;
@@ -72,7 +73,7 @@ main .social-icons a:hover {
 
 footer {
   bottom: 0.4rem;
-  color: set-text-color(#262626);
+  color: #fff;
   font-size: 1rem;
   padding: 1rem;
   position: fixed;
