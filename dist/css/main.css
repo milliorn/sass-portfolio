@@ -4,11 +4,31 @@
   padding: 0;
 }
 
+.home {
+  align-items: center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 40vh;
+  text-align: center;
+  background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("https://source.unsplash.com/random/?light") center top;
+}
+.home__name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+}
+.home__name--last {
+  color: #f97316;
+  font-weight: 700;
+}
+
 body {
   background: #262626;
-  color: set-text-color(#262626);
-  height: 100vh;
+  color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
   line-height: 1;
 }
 
@@ -19,7 +39,7 @@ h3 {
 }
 
 a {
-  color: set-text-color(#262626);
+  color: #fff;
   text-decoration: none;
 }
 
@@ -28,10 +48,10 @@ a {
 }
 
 header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
   padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 main {
@@ -51,11 +71,11 @@ main .social-icons a:hover {
 }
 
 footer {
-  font-size: 1rem;
-  position: fixed;
   bottom: 0.4rem;
+  color: set-text-color(#262626);
+  font-size: 1rem;
+  padding: 1rem;
+  position: fixed;
   right: 1rem;
   text-align: right;
-  padding: 1rem;
-  color: set-text-color(#262626);
 }/*# sourceMappingURL=main.css.map */

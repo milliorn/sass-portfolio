@@ -1,10 +1,11 @@
 @import "config";
+@import "home";
 
 body {
   background: $primary-color;
-  color: set-text-color($primary-color);
-  height: 100vh;
+  color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
   line-height: 1;
 }
 
@@ -15,7 +16,7 @@ h3 {
 }
 
 a {
-  color: set-text-color($primary-color);
+  color: #fff;
   text-decoration: none;
 }
 
@@ -24,10 +25,10 @@ a {
 }
 
 header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
   padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 main {
@@ -50,11 +51,11 @@ main {
 }
 
 footer {
-  font-size: 1rem;
-  position: fixed;
   bottom: 0.4rem;
+  color: set-text-color($primary-color);
+  font-size: 1rem;
+  padding: 1rem;
+  position: fixed;
   right: 1rem;
   text-align: right;
-  padding: 1rem;
-  color: set-text-color($primary-color);
 }
