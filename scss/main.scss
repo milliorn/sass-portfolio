@@ -1,12 +1,8 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import "config";
 
 body {
-  background: #262626;
-  color: set-text-color(#262626);
+  background: $primary-color;
+  color: set-text-color($primary-color);
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
@@ -19,12 +15,12 @@ h3 {
 }
 
 a {
-  color: set-text-color(#262626);
+  color: set-text-color($primary-color);
   text-decoration: none;
 }
 
 .text-secondary {
-  color: #f97316;
+  color: $secondary-color;
 }
 
 header {
@@ -37,17 +33,20 @@ header {
 main {
   height: 100%;
   width: 100%;
-}
-main .social-icons {
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-}
-main .social-icons a {
-  padding: 0.4rem;
-}
-main .social-icons a:hover {
-  color: #f97316;
+
+  .social-icons {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
 }
 
 footer {
@@ -57,5 +56,5 @@ footer {
   right: 1rem;
   text-align: right;
   padding: 1rem;
-  color: set-text-color(#262626);
-}/*# sourceMappingURL=main.css.map */
+  color: set-text-color($primary-color);
+}
