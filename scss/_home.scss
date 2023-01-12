@@ -1,6 +1,5 @@
 .home {
   align-items: center;
-  background-size: cover;
   height: 100%;
   overflow: hidden;
   padding-top: 40vh;
@@ -11,6 +10,7 @@
       rgba($primary-color, 0.3)
     ),
     url("https://source.unsplash.com/random/?light") center top;
+  background-size: cover;
 
   &__name {
     border-bottom: 2px solid set-text-color($primary-color);

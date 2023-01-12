@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,12 +7,12 @@
 
 .home {
   align-items: center;
-  background-size: cover;
   height: 100%;
   overflow: hidden;
   padding-top: 40vh;
   text-align: center;
   background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("https://source.unsplash.com/random/?light") center top;
+  background-size: cover;
 }
 .home__name {
   border-bottom: 2px solid #fff;
@@ -24,10 +25,59 @@
   font-weight: 700;
 }
 
+.menu-btn {
+  cursor: pointer;
+  height: 20px;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 28px;
+  z-index: 1;
+  transition: all 0.9s ease-in-out;
+}
+.menu-btn__burger {
+  background: #fff;
+  height: 3px;
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  transition: all 0.9s ease-in-out;
+}
+.menu-btn__burger::before {
+  background: #fff;
+  content: "";
+  height: 3px;
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  transition: all 0.9s ease-in-out;
+}
+.menu-btn__burger::after {
+  background: #fff;
+  content: "";
+  height: 3px;
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  transition: all 0.9s ease-in-out;
+}
+.menu-btn__burger.open {
+  background: transparent;
+  transform: rotate(720deg);
+}
+.menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.menu-btn__burger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
 body {
   background: #262626;
   color: #fff;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
   line-height: 1;
 }
@@ -59,9 +109,9 @@ main {
   width: 100%;
 }
 main .social-icons {
-  position: fixed;
   bottom: 1rem;
   left: 1rem;
+  position: fixed;
 }
 main .social-icons a {
   padding: 0.4rem;

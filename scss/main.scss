@@ -2,10 +2,12 @@
 @import "home";
 @import "menu";
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 body {
   background: $primary-color;
   color: set-text-color($primary-color);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
   line-height: 1;
 }
@@ -37,9 +39,9 @@ main {
   width: 100%;
 
   .social-icons {
-    position: fixed;
     bottom: 1rem;
     left: 1rem;
+    position: fixed;
 
     a {
       padding: 0.4rem;

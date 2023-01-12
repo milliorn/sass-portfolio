@@ -9,7 +9,7 @@
   @include transition-ease;
 
   &__burger {
-    background: $set-text-color($primary-color);
+    background: set-text-color($primary-color);
     height: 3px;
     position: absolute;
     right: 0;
@@ -18,8 +18,8 @@
     @include transition-ease;
 
     &::before {
-      background-color: set-text-color($primary-color);
-      content: "";
+      background: set-text-color($primary-color);
+      content: '';
       height: 3px;
       position: absolute;
       top: -8px;
@@ -28,8 +28,8 @@
     }
 
     &::after {
-      background-color: set-text-color($primary-color);
-      content: "";
+      background: set-text-color($primary-color);
+      content: '';
       height: 3px;
       position: absolute;
       top: 8px;
@@ -38,8 +38,17 @@
     }
 
     &.open {
-      transform: rotate(720deg);
       background: transparent;
+      transform: rotate(720deg);
+
+      &::before {
+        transform: rotate(45deg) translate(5px, 8px);
+      }
+
+      &::after {
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -7px);
+      }
     }
   }
 }
