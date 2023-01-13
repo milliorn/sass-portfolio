@@ -4,12 +4,13 @@
   &__bio-image {
     height: 50vh;
     width: 100%;
-    background: linear-gradient(
+    background: 
+      linear-gradient(
         to right,
         rgba($primary-color, 0.9),
         rgba($primary-color, 0.3)
       ),
-      url("https://source.unsplash.com/random/?light") center top;
+      url('../img/model-1.jpg') center top;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -42,8 +43,7 @@
       padding: 0.5rem;
       border-bottom: 5px solid $secondary-color;
 
-      h2,
-      h3 {
+      h2, h3 {
         margin: 0.5rem 0;
       }
       h6 {
@@ -58,6 +58,9 @@
   }
 
   footer {
-    transform: rotate(90deg) translate(-3rem, -1rem);
+    transform:
+      rotate(90deg)
+      translate(-3rem, -5rem);
   }
+  
 }
