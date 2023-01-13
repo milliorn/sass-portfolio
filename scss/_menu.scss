@@ -9,17 +9,17 @@
   @include transition-ease;
 
   &__burger {
-    background: set-text-color($primary-color);
     height: 3px;
     position: absolute;
     right: 0;
     top: 0.5rem;
     width: 28px;
+    background: set-text-color($primary-color);
     @include transition-ease;
 
     &::before {
       background: set-text-color($primary-color);
-      content: '';
+      content: "";
       height: 3px;
       position: absolute;
       top: -8px;
@@ -28,12 +28,12 @@
     }
 
     &::after {
-      background: set-text-color($primary-color);
-      content: '';
+      content: "";
       height: 3px;
       position: absolute;
       top: 8px;
       width: 20px;
+      background: set-text-color($primary-color);
       @include transition-ease;
     }
 
@@ -50,5 +50,68 @@
         transform: rotate(-45deg) translate(3px, -7px);
       }
     }
+  }
+}
+
+.nav {
+  left: 0;
+  opacity: 0.98;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  width: 100vw;
+
+  &.open {
+    visibility: visible;
+  }
+
+  .menu-nav {
+    align-items: center;
+    background: $primary-color;
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+    justify-content: center;
+    list-style-type: none;
+    overflow: hidden;
+    padding-right: 1rem;
+    transform: translateY(-100%);
+    @include transition-ease;
+
+    &.open {
+      transform: translateY(0);
+    }
+
+    &__item {
+      transform: translateX(100vw);
+      @include transition-ease;
+
+      &.open {
+        transform: translateX(0);
+      }
+
+      &.active > a {
+        color: $secondary-color;
+      }
+    }
+
+    &__link {
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 300;
+      padding: 2rem 0;
+      text-transform: uppercase;
+      @include transition-ease;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+@for $i from 1 through 4 {
+  .menu-nav__item:nth-child(#{$i}) {
+    transition-delay: ($i * 0.1s) + 0.15s;
   }
 }
