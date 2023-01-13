@@ -1,0 +1,96 @@
+.projects {
+  padding-bottom: 2rem;
+
+  &__bio-image {
+    align-items: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: flex-end;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba($primary-color, 0.9),
+        rgba($primary-color, 0.3)
+      ),
+      url("https://source.unsplash.com/random/?light") center top;
+
+    .text-secondary {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr;
+    margin: 2rem auto 0 auto;
+    width: 60vw;
+  }
+
+  &__item {
+    border-bottom: 5px solid $secondary-color;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    &::after {
+      background: $secondary-color;
+      content: "";
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      @include transition-ease;
+    }
+
+    &:hover {
+      &::after {
+        top: 0;
+        opacity: 0.9;
+      }
+      .projects__btn {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__btns {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+  }
+
+  &__btn {
+    opacity: 0;
+    color: set-text-color($secondary-color);
+    @include transition-ease;
+
+    &:hover {
+      color: set-text-color(set-text-color($secondary-color));
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    transform: rotate(90deg) translate(-3rem, -5rem);
+  }
+}
