@@ -1,6 +1,7 @@
 @import "config";
 @import "home";
 @import "menu";
+@import "about";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
@@ -62,4 +63,8 @@ footer {
   position: fixed;
   right: 1rem;
   text-align: right;
+}
+
+.text-secondary {
+  color: $secondary-color;
 }

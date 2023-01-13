@@ -139,6 +139,56 @@
   transition-delay: 0.55s;
 }
 
+.about {
+  padding-bottom: 2rem;
+}
+.about__bio-image {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("https://source.unsplash.com/random/?light") center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.about__bio-image p {
+  margin-bottom: 2rem;
+}
+.about__bio {
+  width: 80%;
+  text-align: center;
+}
+.about__bio .text-secondary {
+  padding-bottom: 1rem;
+}
+.about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.about .jobs__job {
+  background: #404040;
+  padding: 0.5rem;
+  border-bottom: 5px solid #f97316;
+}
+.about .jobs__job h2,
+.about .jobs__job h3 {
+  margin: 0.5rem 0;
+}
+.about .jobs__job h6 {
+  margin: 0.3rem 0;
+}
+.about .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.about footer {
+  transform: rotate(90deg) translate(-3rem, -1rem);
+}
+
 body {
   background: #262626;
   color: #fff;
@@ -194,4 +244,8 @@ footer {
   position: fixed;
   right: 1rem;
   text-align: right;
+}
+
+.text-secondary {
+  color: #f97316;
 }/*# sourceMappingURL=main.css.map */
