@@ -1,39 +1,39 @@
 .menu-btn {
+  cursor: pointer;
+  height: 1.25rem;
   position: absolute;
-  z-index: 1;
   right: 1rem;
   top: 1rem;
-  height: 20px;
-  width: 28px;
-  cursor: pointer;
+  width: 1.75rem;
+  z-index: 1;
   @include transition-ease;
 
   &__burger {
+    background: set-text-color($primary-color);
+    height: 0.25rem;
     position: absolute;
     right: 0;
     top: 0.5rem;
-    width: 28px;
-    height: 3px;
-    background: set-text-color($primary-color);
+    width: 1.75rem;
     @include transition-ease;
 
     &::before {
-      content: '';
-      position: absolute;
-      top: -8px;
-      width: 28px;
-      height: 3px;
       background: set-text-color($primary-color);
+      content: "";
+      height: 0.25rem;
+      position: absolute;
+      top: -0.5rem;
+      width: 1.75rem;
       @include transition-ease;
     }
 
     &::after {
-      content: '';
-      position: absolute;
-      top: 8px;
-      width: 20px;
-      height: 3px;
       background: set-text-color($primary-color);
+      content: "";
+      height: 0.25rem;
+      position: absolute;
+      top: 0.5rem;
+      width: 1.25rem;
       @include transition-ease;
     }
 
@@ -42,38 +42,38 @@
       background: transparent;
 
       &::before {
-        transform: rotate(45deg) translate(5px, 8px);
+        transform: rotate(45deg) translate(5px, 0.5rem);
       }
 
       &::after {
-        width: 28px;
-        transform: rotate(-45deg) translate(3px, -7px);
+        width: 1.75rem;
+        transform: rotate(-45deg) translate(0.25rem, -7px);
       }
     }
   }
 }
 
 .nav {
+  left: 0;
+  opacity: 0.98;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
-  opacity: 0.98;
   visibility: hidden;
+  width: 100vw;
 
   &.open {
     visibility: visible;
   }
 
   .menu-nav {
+    align-items: center;
+    background: $primary-color;
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
-    overflow: hidden;
-    background: $primary-color;
+    justify-content: center;
     list-style-type: none;
+    overflow: hidden;
     padding-right: 1rem;
     transform: translateY(-100%);
     @include transition-ease;
@@ -87,7 +87,7 @@
       @include transition-ease;
 
       &.open {
-       transform: translateX(0); 
+        transform: translateX(0);
       }
 
       &.active > a {
@@ -98,9 +98,9 @@
     &__link {
       display: inline-block;
       font-size: 2rem;
-      text-transform: uppercase;
-      padding: 2rem 0;
       font-weight: 300;
+      padding: 2rem 0;
+      text-transform: uppercase;
       @include transition-ease;
 
       &:hover {

@@ -39,7 +39,7 @@
 
     &__job {
       background: lighten($primary-color, 10%);
-      border-bottom: 8px solid $secondary-color;
+      border-bottom: 0.5rem solid $secondary-color;
       padding: 0.5rem;
 
       h2,

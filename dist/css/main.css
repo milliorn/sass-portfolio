@@ -26,40 +26,40 @@
 }
 
 .menu-btn {
+  cursor: pointer;
+  height: 1.25rem;
   position: absolute;
-  z-index: 1;
   right: 1rem;
   top: 1rem;
-  height: 20px;
-  width: 28px;
-  cursor: pointer;
+  width: 1.75rem;
+  z-index: 1;
   transition: all 0.9s ease-in-out;
 }
 .menu-btn__burger {
+  background: #fff;
+  height: 0.25rem;
   position: absolute;
   right: 0;
   top: 0.5rem;
-  width: 28px;
-  height: 3px;
-  background: #fff;
+  width: 1.75rem;
   transition: all 0.9s ease-in-out;
 }
 .menu-btn__burger::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  width: 28px;
-  height: 3px;
   background: #fff;
+  content: "";
+  height: 0.25rem;
+  position: absolute;
+  top: -0.5rem;
+  width: 1.75rem;
   transition: all 0.9s ease-in-out;
 }
 .menu-btn__burger::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  width: 20px;
-  height: 3px;
   background: #fff;
+  content: "";
+  height: 0.25rem;
+  position: absolute;
+  top: 0.5rem;
+  width: 1.25rem;
   transition: all 0.9s ease-in-out;
 }
 .menu-btn__burger.open {
@@ -67,33 +67,33 @@
   background: transparent;
 }
 .menu-btn__burger.open::before {
-  transform: rotate(45deg) translate(5px, 8px);
+  transform: rotate(45deg) translate(5px, 0.5rem);
 }
 .menu-btn__burger.open::after {
-  width: 28px;
-  transform: rotate(-45deg) translate(3px, -7px);
+  width: 1.75rem;
+  transform: rotate(-45deg) translate(0.25rem, -7px);
 }
 
 .nav {
+  left: 0;
+  opacity: 0.98;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100vw;
-  opacity: 0.98;
   visibility: hidden;
+  width: 100vw;
 }
 .nav.open {
   visibility: visible;
 }
 .nav .menu-nav {
+  align-items: center;
+  background: #262626;
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
-  overflow: hidden;
-  background: #262626;
+  justify-content: center;
   list-style-type: none;
+  overflow: hidden;
   padding-right: 1rem;
   transform: translateY(-100%);
   transition: all 0.9s ease-in-out;
@@ -114,9 +114,9 @@
 .nav .menu-nav__link {
   display: inline-block;
   font-size: 2rem;
-  text-transform: uppercase;
-  padding: 2rem 0;
   font-weight: 300;
+  padding: 2rem 0;
+  text-transform: uppercase;
   transition: all 0.9s ease-in-out;
 }
 .nav .menu-nav__link:hover {
@@ -171,7 +171,7 @@
 }
 .about .jobs__job {
   background: #404040;
-  border-bottom: 8px solid #f97316;
+  border-bottom: 0.5rem solid #f97316;
   padding: 0.5rem;
 }
 .about .jobs__job h2,
@@ -293,7 +293,7 @@
   position: initial;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 760.5rem) {
   .menu-btn {
     visibility: hidden;
   }
