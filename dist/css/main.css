@@ -63,7 +63,7 @@
   flex-direction: column;
   height: 100%;
   overflow: hidden;
-  padding-top: 40vh;
+  padding-top: 30vh;
 }
 .contact h2 {
   font-size: 3rem;
@@ -297,6 +297,17 @@
   transform: rotate(90deg) translate(-3rem, -1rem);
 }
 
+@media screen and (max-width: 320px) {
+  .home {
+    padding-top: 20vh;
+  }
+  .contact {
+    padding-top: 10vh;
+  }
+  footer {
+    visibility: hidden;
+  }
+}
 @media screen and (min-width: 768px) {
   .menu-btn {
     visibility: hidden;
@@ -333,17 +344,17 @@
     font-size: 3rem;
     line-height: 1;
   }
-  .contact__list {
+  /*.contact__list {
     grid-template-columns: repeat(2, 1fr);
-  }
+  }*/
 }
 @media screen and (min-width: 1024px) {
   .projects__items {
     grid-template-columns: repeat(3, 1fr);
   }
-  .contact__list {
+  /*.contact__list {
     grid-template-columns: repeat(3, 1fr);
-  }
+  }*/
 }
 @media screen and (min-width: 1366px) {
   .projects__bio-image {
