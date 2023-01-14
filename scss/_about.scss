@@ -31,16 +31,16 @@
   }
 
   .jobs {
-    width: 60vw;
-    margin: 2rem auto 0 auto;
     display: grid;
-    grid-template-columns: 1fr;
     gap: 2rem;
+    grid-template-columns: 1fr;
+    margin: 2rem auto 0 auto;
+    width: 60vw;
 
     &__job {
       background: lighten($primary-color, 10%);
-      padding: 0.5rem;
       border-bottom: 8px solid $secondary-color;
+      padding: 0.5rem;
 
       h2,
       h3 {

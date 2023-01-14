@@ -10,7 +10,7 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("../img/model-1.jpg") center top;
   background-size: cover;
 }
 .home__name {
@@ -20,7 +20,7 @@
   border-bottom: 2px solid #fff;
 }
 .home__name--last {
-  color: #ff652f;
+  color: #f97316;
   font-weight: 700;
 }
 
@@ -32,7 +32,7 @@
   height: 20px;
   width: 28px;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 .menu-btn__burger {
   position: absolute;
@@ -41,7 +41,7 @@
   width: 28px;
   height: 3px;
   background: #fff;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 .menu-btn__burger::before {
   content: "";
@@ -50,7 +50,7 @@
   width: 28px;
   height: 3px;
   background: #fff;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 .menu-btn__burger::after {
   content: "";
@@ -59,7 +59,7 @@
   width: 20px;
   height: 3px;
   background: #fff;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 .menu-btn__burger.open {
   transform: rotate(720deg);
@@ -91,24 +91,24 @@
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background: #272727;
+  background: #262626;
   list-style-type: none;
   padding-right: 1rem;
   transform: translateY(-100%);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 .nav .menu-nav.open {
   transform: translateY(0);
 }
 .nav .menu-nav__item {
   transform: translateX(100vw);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 .nav .menu-nav__item.open {
   transform: translateX(0);
 }
 .nav .menu-nav__item.active > a {
-  color: #ff652f;
+  color: #f97316;
 }
 .nav .menu-nav__link {
   display: inline-block;
@@ -116,10 +116,10 @@
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: 300;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 .nav .menu-nav__link:hover {
-  color: #ff652f;
+  color: #f97316;
 }
 
 .menu-nav__item:nth-child(1) {
@@ -142,7 +142,7 @@
   padding-bottom: 2rem;
 }
 .about__bio-image {
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("https://source.unsplash.com/random/?light") center top;
+  background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("https://source.unsplash.com/random/?light") center top;
   align-items: center;
   background-size: cover;
   display: flex;
@@ -162,16 +162,16 @@
   padding-bottom: 1rem;
 }
 .about .jobs {
-  width: 60vw;
-  margin: 2rem auto 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
   gap: 2rem;
+  grid-template-columns: 1fr;
+  margin: 2rem auto 0 auto;
+  width: 60vw;
 }
 .about .jobs__job {
-  background: #414141;
+  background: #404040;
+  border-bottom: 8px solid #f97316;
   padding: 0.5rem;
-  border-bottom: 8px solid #ff652f;
 }
 .about .jobs__job h2,
 .about .jobs__job h3 {
@@ -194,7 +194,7 @@
 .projects__bio-image {
   height: 30vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("../img/model-1.jpg") center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -214,7 +214,7 @@
 }
 .projects__item {
   position: relative;
-  border-bottom: 5px solid #ff652f;
+  border-bottom: 5px solid #f97316;
   overflow: hidden;
   cursor: pointer;
 }
@@ -228,9 +228,9 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #ff652f;
+  background: #f97316;
   opacity: 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 .projects__item:hover::after {
   top: 0;
@@ -253,7 +253,7 @@
 .projects__btn {
   opacity: 0;
   color: #000;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 .projects__btn:hover {
   color: #fff;
@@ -273,7 +273,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.3)), url("../img/model-1.jpg") center top;
   background-size: cover;
 }
 .contact h2 {
@@ -336,13 +336,13 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1366px) {
   .projects__bio-image {
     height: 50vh;
   }
 }
 body {
-  background: #272727;
+  background: #262626;
   color: #fff;
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -359,7 +359,7 @@ a {
 }
 
 .text-secondary {
-  color: #ff652f;
+  color: #f97316;
 }
 
 header {
@@ -380,10 +380,10 @@ main .social-icons {
 }
 main .social-icons a {
   padding: 0.4rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 main .social-icons a:hover {
-  color: #ff652f;
+  color: #f97316;
 }
 
 footer {
