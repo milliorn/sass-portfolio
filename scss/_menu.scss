@@ -97,8 +97,9 @@
 
     &__link {
       display: inline-block;
-      font-size: 2rem;
+      font-size: 1.875rem;
       font-weight: 300;
+      line-height: 2.25rem;
       padding: 2rem 0;
       text-transform: uppercase;
       @include transition-ease;

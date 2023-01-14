@@ -7,11 +7,11 @@
     visibility: visible;
 
     .menu-nav {
-      display: block;
-      transform: translateY(0);
-      height: 100%;
       background: transparent;
+      display: block;
+      height: 100%;
       text-align: right;
+      transform: translateY(0);
 
       &__item {
         display: inline;
@@ -20,12 +20,14 @@
 
       &__link {
         font-size: 1.5rem;
+        line-height: 2rem;
       }
     }
   }
 
   .about__bio {
     font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .projects {
@@ -37,6 +39,7 @@
     }
     .text-secondary {
       font-size: 3rem;
+      line-height: 1;
     }
   }
 

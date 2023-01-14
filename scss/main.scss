@@ -1,20 +1,24 @@
-@import 'config';
-@import 'home';
-@import 'menu';
-@import 'about';
-@import 'projects';
-@import 'contact';
-@import 'responsive';
+@import "config";
+@import "about";
+@import "contact";
+@import "home";
+@import "menu";
+@import "projects";
+@import "responsive";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
   background: $primary-color;
   color: set-text-color($primary-color);
   height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 400;
 }
 
@@ -55,11 +59,12 @@ main {
 }
 
 footer {
-  font-size: 1rem;
-  position: fixed;
   bottom: 0.4rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem;
+  position: fixed;
   right: 1rem;
   text-align: right;
-  padding: 1rem;
   color: set-text-color($primary-color);
 }
